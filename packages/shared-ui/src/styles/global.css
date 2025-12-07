@@ -1,0 +1,77 @@
+@import "modern-normalize/modern-normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* CSS variables */
+:root {
+  --light-primary: #f7f8fa;
+  --light-secondary: #ffffff;
+  --light-tertiary: #fdfdfd;
+  --light-quaternary: #f1f1f1;
+
+  --medium-primary: #93939a;
+  --medium-secondary: #6a6a6f;
+
+  --dark-primary: 29, 30, 33; /* #1d1e21 */
+  --dark-secondary: #252539;
+
+  --accent-primary: #59b17a;
+  --accent-secondary: #ffc531;
+  --accent-tertiary: #e85050;
+
+  /* Images */
+  --bg-pill-mob: url("../assets/images/pill-bg-mob.png");
+  --bg-pill-tab: url("../assets/images/pill-bg-tab.png");
+  --bg-element-mob: url("../assets/images/element-bg-mob.png");
+  --bg-element-tab: url("../assets/images/element-bg-tab.png");
+}
+
+/* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+textarea {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  letter-spacing: inherit;
+}
+
+svg {
+  display: block;
+}

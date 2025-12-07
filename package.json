@@ -1,0 +1,19 @@
+{
+  "name": "e-pharmacy-front-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:customer": "pnpm --filter frontend-customer dev",
+    "dev:store": "pnpm --filter frontend-store dev",
+    "dev:dashboard": "pnpm --filter frontend-dashboard dev",
+    "dev:all": "pnpm --parallel --filter './packages/*' dev",
+    "build:all": "pnpm --parallel --filter './packages/*' build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Volodymyr Shkimba <shkimbavova@gmail.com>",
+  "license": "ISC",
+  "description": "Monorepo for e-pharmacy frontends and shared UI library"
+}

@@ -1,0 +1,9 @@
+.button {
+  border-radius: 60px;
+  background-color: var(--accent-primary);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--light-secondary);
+}
