@@ -1,3 +1,5 @@
+import { Link, useNavigate } from "react-router-dom";
+
 import { Button, Icon } from "shared-ui";
 
 import NavLinks from "../NavLinks/NavLinks";
@@ -7,6 +9,8 @@ import css from "./MobMenu.module.css";
 const isLogedIn = false;
 
 const MobMenu = ({ closeMenu }) => {
+  const navigate = useNavigate();
+
   return (
     <div className={css.overlay}>
       <div className={css.menu}>
@@ -21,12 +25,16 @@ const MobMenu = ({ closeMenu }) => {
             </Button>
           ) : (
             <>
-              <Button stroke className={"registerHeaderLightMob"}>
+              <Button
+                stroke
+                className={"registerHeaderLightMob"}
+                onClick={() => navigate("/register")}
+              >
                 Register
               </Button>
-              <button className={css.loginBtn} type="button">
+              <Link className={css.loginBtn} to={"/login"}>
                 Login
-              </button>
+              </Link>
             </>
           )}
         </div>

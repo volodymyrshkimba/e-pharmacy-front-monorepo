@@ -22,6 +22,7 @@
   --accent-secondary: #ffc531;
   --accent-tertiary: #e85050;
   --accent-quaternary: #e7f1ed;
+  --accent-quaternary-rgb: 231, 241, 237;
 
   --shadow: #474747;
   --shadow-rgb: 71, 71, 71;
@@ -31,6 +32,9 @@
   --bg-pill-tab: url("../assets/images/pill-bg-tab.png");
   --bg-element-mob: url("../assets/images/element-bg-mob.png");
   --bg-element-tab: url("../assets/images/element-bg-tab.png");
+  --bg-hero-mob: url("../assets/images/hero-bg-mob.png");
+  --bg-hero-tab: url("../assets/images/hero-bg-tab.png");
+  --bg-hero-desk: url("../assets/images/hero-bg-desk.png");
 }
 
 /* reset styles */

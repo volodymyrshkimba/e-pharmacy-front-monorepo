@@ -1,3 +1,4 @@
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { clsx } from "clsx";
 
@@ -14,6 +15,8 @@ import css from "./Header.module.css";
 const isLogedIn = false;
 
 const Header = ({ theme }) => {
+  const navigate = useNavigate();
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -46,12 +49,13 @@ const Header = ({ theme }) => {
                         ? "registerHeaderLight"
                         : "registerHeader"
                     }
+                    onClick={() => navigate("/register")}
                   >
                     Register
                   </Button>
-                  <button className={css.loginBtn} type="button">
+                  <Link className={css.loginBtn} to={"/login"}>
                     Login
-                  </button>
+                  </Link>
                 </div>
               )}
               <button
