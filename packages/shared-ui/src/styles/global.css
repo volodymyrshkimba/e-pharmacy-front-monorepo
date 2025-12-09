@@ -4,9 +4,11 @@
 /* CSS variables */
 :root {
   --light-primary: #f7f8fa;
+  --light-primary-rgb: 247, 248, 250;
   --light-secondary: #ffffff;
   --light-tertiary: #fdfdfd;
   --light-quaternary: #f1f1f1;
+  --light-quaternary-rgb: 241, 241, 241;
 
   --medium-primary: #93939a;
   --medium-secondary: #6a6a6f;

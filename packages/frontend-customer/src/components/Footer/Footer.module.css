@@ -1,0 +1,158 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: var(--accent-primary);
+  color: var(--light-primary);
+}
+
+.topContentWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.text {
+  margin-top: 20px;
+
+  font-size: 14px;
+  line-height: 1.29;
+
+  max-width: 261px;
+}
+
+.linksList {
+  display: flex;
+  gap: 32px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.socialList {
+  display: none;
+}
+
+.rightsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 21px;
+
+  padding-top: 20px;
+  margin-top: 80px;
+
+  font-size: 10px;
+  line-height: 1;
+
+  border-top: 1px solid rgba(var(--light-primary-rgb), 0.3);
+}
+
+.item {
+  position: relative;
+}
+
+.rightsList .item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: -10px;
+
+  height: 100%;
+  width: 1px;
+
+  background-color: rgba(var(--light-primary-rgb), 0.2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .topContentWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .linksList {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .navSocialWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .socialList {
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+  }
+
+  .socialListItem {
+    width: 44px;
+    height: 44px;
+
+    border: 1px solid rgba(var(--light-primary-rgb), 0.1);
+    border-radius: 10px;
+  }
+
+  .socialListItem .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .rightsList {
+    justify-content: center;
+    gap: 49px;
+
+    padding-top: 32px;
+    margin-top: 88px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .rightsList .item:not(:last-child)::after {
+    right: -24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .navSocialWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 270px;
+  }
+
+  .text {
+    max-width: 311px;
+  }
+
+  .linksList {
+    gap: 50px;
+  }
+
+  .rightsList {
+    padding-top: 40px;
+    margin-top: 64px;
+  }
+}

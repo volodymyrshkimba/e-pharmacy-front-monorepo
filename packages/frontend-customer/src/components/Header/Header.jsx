@@ -1,24 +1,77 @@
-import { Icon } from "shared-ui";
+import { useState } from "react";
+import { clsx } from "clsx";
+
+import { Button, Icon } from "shared-ui";
 
 import Container from "../Container/Container";
 import Logo from "../Logo/Logo";
 import User from "../User/User";
+import NavLinks from "../NavLinks/NavLinks";
+import MobMenu from "../MobMenu/MobMenu";
 
 import css from "./Header.module.css";
 
-const Header = () => {
+const isLogedIn = false;
+
+const Header = ({ theme }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <Container>
+    <>
       <header className={css.header}>
-        <Logo name={"logo"} />
-        <div className={css.userBtnWrapper}>
-          <User />
-          <button type="button">
-            <Icon name={"burger"} />
-          </button>
-        </div>
+        <Container>
+          <div className={clsx(css.headerContent, css[theme])}>
+            <Logo name={theme === "light" ? "logoWhite" : "logo"} />
+            <div className={css.userBtnWrapper}>
+              {isLogedIn ? (
+                <>
+                  <User theme={theme} />
+                  <Button
+                    stroke
+                    className={theme === "light" ? "logOutLight" : "logOut"}
+                  >
+                    Log out
+                  </Button>
+                </>
+              ) : (
+                <div className={css.authBtns}>
+                  <Button
+                    stroke
+                    className={
+                      theme === "light"
+                        ? "registerHeaderLight"
+                        : "registerHeader"
+                    }
+                  >
+                    Register
+                  </Button>
+                  <button className={css.loginBtn} type="button">
+                    Login
+                  </button>
+                </div>
+              )}
+              <button
+                className={css.burger}
+                type="button"
+                onClick={() => setMenuOpen(true)}
+              >
+                <Icon
+                  name={"burger"}
+                  className={theme === "light" ? "burgerLight" : ""}
+                />
+              </button>
+            </div>
+            <NavLinks />
+          </div>
+        </Container>
       </header>
-    </Container>
+
+      {menuOpen && <MobMenu closeMenu={closeMenu} />}
+    </>
   );
 };
 

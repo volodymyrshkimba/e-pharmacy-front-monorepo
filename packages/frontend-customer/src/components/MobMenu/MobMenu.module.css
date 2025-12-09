@@ -1,0 +1,66 @@
+@media screen and (max-width: 1439px) {
+  .overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 200;
+
+    background-color: rgba(var(--dark-primary-rgb), 0.45);
+  }
+
+  .menu {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    height: 100%;
+    width: 210px;
+
+    padding-bottom: 40px;
+    margin-left: auto;
+
+    background-color: var(--accent-primary);
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 31px;
+    right: 20px;
+  }
+
+  .loginBtn {
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--light-quaternary);
+  }
+
+  .authBtnsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu {
+      width: 334px;
+
+      padding-bottom: 64px;
+    }
+
+    .closeBtn {
+      position: absolute;
+      top: 39px;
+      right: 32px;
+    }
+
+    .authBtnsWrapper {
+      flex-direction: row;
+      gap: 14px;
+    }
+  }
+}

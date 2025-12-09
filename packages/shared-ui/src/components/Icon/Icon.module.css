@@ -5,10 +5,30 @@
   height: 26px;
 }
 
+.burger.burgerLight {
+  stroke: var(--light-secondary);
+}
+
 .cart {
   stroke: var(--accent-primary);
   fill: var(--light-secondary);
 
   width: 16px;
   height: 16px;
+}
+
+.close {
+  stroke: var(--light-secondary);
+
+  width: 32px;
+  height: 32px;
+}
+
+.facebook,
+.instagram,
+.youtube {
+  width: 28px;
+  height: 28px;
+
+  fill: var(--light-primary);
 }

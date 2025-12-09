@@ -1,4 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headerContent {
   padding-top: 25px;
 
   display: flex;
@@ -9,4 +16,50 @@
 .userBtnWrapper {
   display: flex;
   gap: 10px;
+}
+
+.authBtns {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .headerContent {
+    padding-top: 28px;
+  }
+
+  .userBtnWrapper {
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .headerContent {
+    position: relative;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .userBtnWrapper {
+    gap: 12px;
+  }
+
+  .authBtns {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .loginBtn {
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--accent-primary);
+  }
+
+  .light .loginBtn {
+    color: var(--light-quaternary);
+  }
 }

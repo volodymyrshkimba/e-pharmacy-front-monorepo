@@ -10,6 +10,9 @@ importers:
 
   packages/frontend-customer:
     dependencies:
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       react:
         specifier: ^19.2.0
         version: 19.2.1
