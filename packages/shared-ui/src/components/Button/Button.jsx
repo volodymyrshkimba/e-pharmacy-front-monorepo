@@ -1,13 +1,14 @@
+import clsx from "clsx";
+
 import css from "./Button.module.css";
 
-const Button = ({ children, w, h, onClick, ...props }) => {
-  const style = {
-    width: w || "auto",
-    height: h || "44px",
-  };
-
+const Button = ({ children, className, onClick, ...props }) => {
   return (
-    <button className={css.button} style={style} onClick={onClick} {...props}>
+    <button
+      className={clsx(css.button, css[className])}
+      onClick={onClick}
+      {...props}
+    >
       {children}
     </button>
   );

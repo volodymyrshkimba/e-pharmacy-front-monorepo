@@ -1,14 +1,25 @@
 import { useId } from "react";
 
+import { clsx } from "clsx";
+
 import css from "./Input.module.css";
 
-const Input = ({ name, type, label, placeholder, id, register, ...props }) => {
+const Input = ({
+  name,
+  type,
+  label,
+  placeholder,
+  id,
+  register,
+  className,
+  ...props
+}) => {
   const reactId = useId();
 
   const inputId = id || reactId;
 
   return (
-    <div className={css.wrapper}>
+    <div className={clsx(css.wrapper, css[className])}>
       {label && (
         <label htmlFor={inputId} className={css.label}>
           {label}

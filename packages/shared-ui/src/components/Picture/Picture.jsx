@@ -2,12 +2,20 @@ import logoMob from "../../assets/images/logo-mob.png";
 import logoTab from "../../assets/images/logo-tab.png";
 import logoMob2x from "../../assets/images/logo-mob@2x.png";
 import logoTab2x from "../../assets/images/logo-tab@2x.png";
+import logoWhiteMob from "../../assets/images/logo-white-mob.png";
+import logoWhiteTab from "../../assets/images/logo-white-tab.png";
+import logoWhiteMob2x from "../../assets/images/logo-white-mob@2x.png";
+import logoWhiteTab2x from "../../assets/images/logo-white-tab@2x.png";
 
 const imageMap = {
   logoMob,
   logoTab,
   logoMob2x,
   logoTab2x,
+  logoWhiteMob,
+  logoWhiteTab,
+  logoWhiteMob2x,
+  logoWhiteTab2x,
 };
 
 const Picture = ({ name, alt = "", fallback = null }) => {
@@ -27,15 +35,15 @@ const Picture = ({ name, alt = "", fallback = null }) => {
     <picture>
       <source
         media="(min-width: 1440px)"
-        srcset={`${srcDesc || srcTab} 1x, ${srcDesc2x || srcTab2x} 2x`}
+        srcSet={`${srcDesc || srcTab} 1x, ${srcDesc2x || srcTab2x} 2x`}
       />
       <source
         media="(min-width: 768px)"
-        srcset={`${srcTab} 1x, ${srcTab2x} 2x`}
+        srcSet={`${srcTab} 1x, ${srcTab2x} 2x`}
       />
       <source
         media="(max-width: 767px)"
-        srcset={`${srcMob} 1x, ${srcMob2x} 2x`}
+        srcSet={`${srcMob} 1x, ${srcMob2x} 2x`}
       />
 
       <img src={srcMob} alt={alt} />

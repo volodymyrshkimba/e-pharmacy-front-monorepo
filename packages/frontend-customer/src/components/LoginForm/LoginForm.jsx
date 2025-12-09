@@ -1,24 +1,18 @@
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 import { Button, Input } from "shared-ui";
 
-import css from "./AuthForm.module.css";
+import css from "./LoginForm.module.css";
 
 const defaultValues = {
-  name: "",
-  email: "",
-  phone: "",
-  password: "",
-};
-
-const defaultValuesLogin = {
   email: "",
   password: "",
 };
 
-const AuthForm = ({ isLogin }) => {
+const LoginForm = () => {
   const { register, handleSubmit, reset } = useForm({
-    defaultValues: isLogin ? defaultValuesLogin : defaultValues,
+    defaultValues,
   });
 
   const onSubmit = (formData) => {
@@ -30,28 +24,12 @@ const AuthForm = ({ isLogin }) => {
   return (
     <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
       <div className={css.inputsWrapper}>
-        {!isLogin && (
-          <Input
-            name={"name"}
-            type={"text"}
-            placeholder={"User Name"}
-            register={register}
-          />
-        )}
         <Input
           name={"email"}
           type={"text"}
           placeholder={"Email address"}
           register={register}
         />
-        {!isLogin && (
-          <Input
-            name={"phone"}
-            type={"text"}
-            placeholder={"Phone number"}
-            register={register}
-          />
-        )}
         <Input
           name={"password"}
           type={"text"}
@@ -59,9 +37,12 @@ const AuthForm = ({ isLogin }) => {
           register={register}
         />
       </div>
-      <Button w={"100%"}>{isLogin ? "Log in" : "Register"}</Button>
+      <Button className={"login"}>{"Log in"}</Button>
+      <Link className={css.registerLink} to={"/register"}>
+        {"Don't have an account?"}
+      </Link>
     </form>
   );
 };
 
-export default AuthForm;
+export default LoginForm;

@@ -11,12 +11,18 @@
   --medium-primary: #93939a;
   --medium-secondary: #6a6a6f;
 
-  --dark-primary: 29, 30, 33; /* #1d1e21 */
+  --dark-primary: #1d1e21;
+  --dark-primary-rgb: 29, 30, 33;
   --dark-secondary: #252539;
 
   --accent-primary: #59b17a;
+  --accent-primary-rgb: 89, 177, 122;
   --accent-secondary: #ffc531;
   --accent-tertiary: #e85050;
+  --accent-quaternary: #e7f1ed;
+
+  --shadow: #474747;
+  --shadow-rgb: 71, 71, 71;
 
   /* Images */
   --bg-pill-mob: url("../assets/images/pill-bg-mob.png");
