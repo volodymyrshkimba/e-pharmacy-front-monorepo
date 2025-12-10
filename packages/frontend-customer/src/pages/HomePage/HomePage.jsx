@@ -1,5 +1,9 @@
 import Hero from "../../components/Hero/Hero";
 import StatCards from "../../components/StatCards/StatCards";
+import NearestStore from "../../components/NearestStore/NearestStore";
+import AddPharmacy from "../../components/AddPharmacy/AddPharmacy";
+import ScrollingText from "../../components/ScrollingText/ScrollingText";
+import Reviews from "../../components/Reviews/Reviews";
 
 import css from "./HomePage.module.css";
 
@@ -8,6 +12,10 @@ const HomePage = () => {
     <main>
       <Hero />
       <StatCards />
+      <NearestStore />
+      <AddPharmacy />
+      <ScrollingText />
+      <Reviews />
     </main>
   );
 };

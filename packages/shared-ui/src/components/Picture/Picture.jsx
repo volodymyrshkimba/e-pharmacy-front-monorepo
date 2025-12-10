@@ -6,6 +6,10 @@ import logoWhiteMob from "../../assets/images/logo-white-mob.png";
 import logoWhiteTab from "../../assets/images/logo-white-tab.png";
 import logoWhiteMob2x from "../../assets/images/logo-white-mob@2x.png";
 import logoWhiteTab2x from "../../assets/images/logo-white-tab@2x.png";
+import addMob from "../../assets/images/add-mob.png";
+import addMob2x from "../../assets/images/add-mob@2x.png";
+import addTab from "../../assets/images/add-tab.png";
+import addTab2x from "../../assets/images/add-tab@2x.png";
 
 const imageMap = {
   logoMob,
@@ -16,6 +20,10 @@ const imageMap = {
   logoWhiteTab,
   logoWhiteMob2x,
   logoWhiteTab2x,
+  addMob,
+  addTab,
+  addMob2x,
+  addTab2x,
 };
 
 const Picture = ({ name, alt = "", fallback = null }) => {

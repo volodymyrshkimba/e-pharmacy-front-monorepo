@@ -32,3 +32,35 @@
 
   fill: var(--light-primary);
 }
+
+.map-pin {
+  stroke: var(--accent-primary);
+  fill: none;
+
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.phone {
+  stroke: var(--accent-primary);
+  fill: none;
+
+  width: 18px;
+  height: 18px;
+}
+
+.star {
+  stroke: var(--accent-secondary);
+  fill: var(--accent-secondary);
+
+  width: 16px;
+  height: 16px;
+}
+
+.lightning {
+  width: 20px;
+  height: 20px;
+
+  stroke: var(--accent-primary);
+  fill: none;
+}

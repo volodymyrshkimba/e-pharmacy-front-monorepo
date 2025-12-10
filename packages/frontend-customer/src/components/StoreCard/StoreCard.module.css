@@ -1,0 +1,135 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+
+  border: 1.15px solid var(--light-quaternary);
+  border-radius: 27px;
+
+  padding: 32px 32px 40px 32px;
+  height: 202px;
+
+  background: var(--bg-element-card-mob) no-repeat bottom right;
+  background-color: var(--accent-quaternary);
+}
+
+.leftSideWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-weight: 600;
+  line-height: 1.4;
+
+  max-width: 150px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addressAndPhone {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--medium-primary);
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+
+  max-width: 150px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingStatusWrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+.status {
+  border-radius: 8px;
+
+  padding: 8px 16px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.status.open {
+  background-color: rgba(var(--accent-primary-rgb), 0.1);
+  color: var(--accent-primary);
+}
+
+.status.close {
+  background-color: rgba(var(--accent-tertiary-rgb), 0.1);
+  color: var(--accent-tertiary);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 40px 24px 46px 40px;
+    height: 232px;
+    width: calc(100% / 2 - 8px);
+
+    background: var(--bg-element-card-tab) no-repeat bottom right;
+    background-color: var(--accent-quaternary);
+  }
+
+  .leftSideWrapper {
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 20px;
+
+    max-width: 160px;
+  }
+
+  .addressAndPhone {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 40px 40px 46px 40px;
+    width: calc(100% / 3 - 24px);
+
+    background: var(--bg-element-card-desc) no-repeat bottom right;
+    background-color: var(--accent-quaternary);
+  }
+
+  .title {
+    font-size: 20px;
+
+    max-width: 190px;
+  }
+}

@@ -21,11 +21,14 @@
   --accent-primary-rgb: 89, 177, 122;
   --accent-secondary: #ffc531;
   --accent-tertiary: #e85050;
+  --accent-tertiary-rgb: 232, 80, 80;
   --accent-quaternary: #e7f1ed;
   --accent-quaternary-rgb: 231, 241, 237;
 
   --shadow: #474747;
   --shadow-rgb: 71, 71, 71;
+  --shadow-avatar: #101828;
+  --shadow-avatar-rgb: 16, 24, 40;
 
   /* Images */
   --bg-pill-mob: url("../assets/images/pill-bg-mob.png");
@@ -35,6 +38,10 @@
   --bg-hero-mob: url("../assets/images/hero-bg-mob.png");
   --bg-hero-tab: url("../assets/images/hero-bg-tab.png");
   --bg-hero-desk: url("../assets/images/hero-bg-desk.png");
+  --bg-element-card-mob: url("../assets/images/element-bg-card-mob.png");
+  --bg-element-card-tab: url("../assets/images/element-bg-card-tab.png");
+  --bg-element-card-desc: url("../assets/images/element-bg-card-desc.png");
+  --bg-add-mob: url("../assets/images/add-bg-mob.png");
 }
 
 /* reset styles */

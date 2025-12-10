@@ -49,9 +49,24 @@
   color: var(--light-quaternary);
 }
 
+.stroke.addLight {
+  width: 144px;
+  height: 44px;
+
+  font-weight: 500;
+  line-height: 1.29;
+
+  border: 1px solid rgba(var(--light-quaternary-rgb), 0.5);
+  color: var(--light-quaternary);
+}
+
 @media screen and (min-width: 768px) {
   .button.register {
     width: 280px;
+  }
+
+  .stroke.addLight {
+    width: 190px;
   }
 }
 
