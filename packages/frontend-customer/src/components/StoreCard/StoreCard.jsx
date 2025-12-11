@@ -1,36 +1,44 @@
 import clsx from "clsx";
 
-import { Icon } from "shared-ui";
+import { Button, Icon } from "shared-ui";
 
 import css from "./StoreCard.module.css";
 
-const StoreCard = ({ card }) => {
+const StoreCard = ({ card, medicinePage }) => {
+  const ratingStatusWrapper = (
+    <div className={css.ratingStatusWrapper}>
+      <span className={css.rating}>
+        <Icon name={"star"} />
+        {card.rating}
+      </span>
+      <span className={clsx(css.status, css[card.status])}>{card.status}</span>
+    </div>
+  );
+
   return (
-    <li className={css.card} key={card.phone}>
+    <li className={clsx(css.card, medicinePage && css.medicinePage)}>
       <div className={css.leftSideWrapper}>
         <h3 className={css.title}>{card.name}</h3>
         <div className={css.addressAndPhone}>
           <p className={clsx(css.address)}>
             <Icon name={"map-pin"} />
-            {card.address}
+            {card.address} {card.city}
           </p>
           <p className={css.phone}>
             <Icon name={"phone"} />
             {card.phone}
           </p>
         </div>
+        {medicinePage && (
+          <div className={css.buttonRatingWrapper}>
+            <Button className={"visit"} type={"button"}>
+              Visit Store
+            </Button>
+            {ratingStatusWrapper}
+          </div>
+        )}
       </div>
-      <div>
-        <div className={css.ratingStatusWrapper}>
-          <span className={css.rating}>
-            <Icon name={"star"} />
-            {card.rating}
-          </span>
-          <span className={clsx(css.status, css[card.status])}>
-            {card.status}
-          </span>
-        </div>
-      </div>
+      {!medicinePage && ratingStatusWrapper}
     </li>
   );
 };

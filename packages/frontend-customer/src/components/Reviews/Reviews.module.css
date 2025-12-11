@@ -92,7 +92,7 @@
   }
 
   .item {
-    width: calc(100% / 2);
+    width: calc((100% - 16px) / 2);
   }
 
   .list .item:nth-child(2) {
@@ -107,7 +107,7 @@
   }
 
   .item {
-    width: calc(100% / 3);
+    width: calc((100% - 56px) / 3);
 
     padding: 54px 28px 32px 28px;
   }

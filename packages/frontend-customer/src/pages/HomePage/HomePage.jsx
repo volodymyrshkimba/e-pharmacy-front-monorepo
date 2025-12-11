@@ -5,8 +5,6 @@ import AddPharmacy from "../../components/AddPharmacy/AddPharmacy";
 import ScrollingText from "../../components/ScrollingText/ScrollingText";
 import Reviews from "../../components/Reviews/Reviews";
 
-import css from "./HomePage.module.css";
-
 const HomePage = () => {
   return (
     <main>

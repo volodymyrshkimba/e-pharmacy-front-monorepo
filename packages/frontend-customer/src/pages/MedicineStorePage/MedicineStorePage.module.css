@@ -1,0 +1,50 @@
+.main {
+  padding-top: 121px;
+  padding-bottom: 80px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  color: #1d1e21;
+
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 152px;
+    padding-bottom: 120px;
+  }
+
+  .title {
+    margin-bottom: 32px;
+  }
+
+  .list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-top: 172px;
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .list {
+    gap: 40px 20px;
+  }
+}

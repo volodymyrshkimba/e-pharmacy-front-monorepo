@@ -60,6 +60,27 @@
   color: var(--light-quaternary);
 }
 
+.button.addToCart {
+  width: 108px;
+  height: 34px;
+
+  line-height: 1;
+}
+
+.button.visit {
+  width: 102px;
+}
+
+.button.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 116px;
+  height: 44px;
+}
+
 @media screen and (min-width: 768px) {
   .button.register {
     width: 280px;

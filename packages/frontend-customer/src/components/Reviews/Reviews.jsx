@@ -36,7 +36,7 @@ const Reviews = () => {
         </p>
         <ul className={css.list}>
           {data.map((item) => (
-            <li className={css.item}>
+            <li className={css.item} key={item.testimonial}>
               <div className={css.thumb}>
                 <img className={css.img} src={item.photo} alt={item.name} />
               </div>

@@ -16,7 +16,7 @@ const AddPharmacy = () => {
               home by connecting with your community pharmacy through our online
               platform.
             </p>
-            <Button stroke className={"addLight"}>
+            <Button stroke className={"addLight"} type={"button"}>
               Buy medicine
             </Button>
           </div>

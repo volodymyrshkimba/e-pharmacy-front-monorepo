@@ -6,6 +6,8 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import HomePage from "./pages/HomePage/HomePage";
 import MedicineStorePage from "./pages/MedicineStorePage/MedicineStorePage";
+import MedicinePage from "./pages/MedicinePage/MedicinePage";
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         </Route>
         <Route path="/" element={<SharedLayout />}>
           <Route path="medicine-store" element={<MedicineStorePage />} />
+          <Route path="medicine" element={<MedicinePage />} />
+          <Route path="medicine/product/:id" element={<ProductPage />} />
         </Route>
       </Routes>
     </>

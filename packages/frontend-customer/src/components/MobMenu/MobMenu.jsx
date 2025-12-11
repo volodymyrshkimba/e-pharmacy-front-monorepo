@@ -20,7 +20,7 @@ const MobMenu = ({ closeMenu }) => {
         <NavLinks mobMenu />
         <div className={css.authBtnsWrapper}>
           {isLogedIn ? (
-            <Button stroke className={"logOutLightMob"}>
+            <Button stroke className={"logOutLightMob"} type={"button"}>
               Log out
             </Button>
           ) : (
@@ -29,6 +29,7 @@ const MobMenu = ({ closeMenu }) => {
                 stroke
                 className={"registerHeaderLightMob"}
                 onClick={() => navigate("/register")}
+                type={"button"}
               >
                 Register
               </Button>

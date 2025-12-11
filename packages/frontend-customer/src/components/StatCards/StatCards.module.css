@@ -81,7 +81,7 @@
   }
 
   .item {
-    width: calc((100% / 2) - 28px);
+    width: calc((100% - 28px) / 2);
   }
 
   .number {
@@ -114,6 +114,6 @@
   }
 
   .item {
-    width: calc((100% / 3) - (28px + 28px));
+    width: calc((100% - 56px) / 3);
   }
 }

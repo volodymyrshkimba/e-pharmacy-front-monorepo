@@ -12,10 +12,32 @@
   background-color: var(--accent-quaternary);
 }
 
+.card.medicinePage {
+  height: 276px;
+
+  background: var(--bg-element-card-medicine-tab) no-repeat top right;
+  background-color: var(--accent-quaternary);
+}
+
+.buttonRatingWrapper {
+  display: flex;
+  gap: 20px;
+
+  justify-content: space-between;
+
+  margin-top: 36px;
+}
+
 .leftSideWrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.card.medicinePage .leftSideWrapper {
+  width: 100%;
+
+  gap: 0px;
 }
 
 .title {
@@ -27,6 +49,15 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card.medicinePage .title {
+  white-space: wrap;
+  overflow: visible;
+  text-overflow: none;
+  max-width: 100%;
+
+  margin-bottom: 32px;
 }
 
 .addressAndPhone {
@@ -57,6 +88,7 @@
 .ratingStatusWrapper {
   display: flex;
   align-items: center;
+  align-self: flex-start;
   gap: 14px;
 }
 
@@ -96,10 +128,14 @@
   .card {
     padding: 40px 24px 46px 40px;
     height: 232px;
-    width: calc(100% / 2 - 8px);
+    width: calc((100% - 16px) / 2);
 
     background: var(--bg-element-card-tab) no-repeat bottom right;
     background-color: var(--accent-quaternary);
+  }
+
+  .card.medicinePage {
+    padding: 40px;
   }
 
   .leftSideWrapper {
@@ -112,6 +148,10 @@
     max-width: 160px;
   }
 
+  .card.medicinePage .title {
+    margin-bottom: 20px;
+  }
+
   .addressAndPhone {
     font-size: 16px;
     line-height: 1.25;
@@ -121,10 +161,17 @@
 @media screen and (min-width: 1440px) {
   .card {
     padding: 40px 40px 46px 40px;
-    width: calc(100% / 3 - 24px);
+    width: calc((100% - 72px) / 3);
 
     background: var(--bg-element-card-desc) no-repeat bottom right;
     background-color: var(--accent-quaternary);
+  }
+
+  .card.medicinePage {
+    background: var(--bg-element-card-medicine-desc) no-repeat top right;
+    background-color: var(--accent-quaternary);
+
+    width: calc((100% - 40px) / 3);
   }
 
   .title {

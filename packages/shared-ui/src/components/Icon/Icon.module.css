@@ -64,3 +64,46 @@
   stroke: var(--accent-primary);
   fill: none;
 }
+
+.search {
+  width: 16px;
+  height: 16px;
+
+  stroke: var(--dark-primary);
+  fill: none;
+}
+
+.filter {
+  width: 14px;
+  height: 14px;
+
+  stroke: var(--light-secondary);
+  fill: none;
+}
+
+.arrow-down {
+  width: 16px;
+  height: 16px;
+
+  stroke: var(--dark-primary);
+  fill: none;
+}
+
+.pag-left,
+.pag-right {
+  width: 6px;
+  height: 12px;
+}
+
+.pag-left.disable,
+.pag-right.disable {
+  fill: rgba(var(--dark-primary-rgb), 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .pag-left,
+  .pag-right {
+    width: 8px;
+    height: 14px;
+  }
+}

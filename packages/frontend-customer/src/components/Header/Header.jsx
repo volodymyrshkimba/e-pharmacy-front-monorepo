@@ -36,6 +36,7 @@ const Header = ({ theme }) => {
                   <Button
                     stroke
                     className={theme === "light" ? "logOutLight" : "logOut"}
+                    type={"button"}
                   >
                     Log out
                   </Button>
@@ -50,6 +51,7 @@ const Header = ({ theme }) => {
                         : "registerHeader"
                     }
                     onClick={() => navigate("/register")}
+                    type={"button"}
                   >
                     Register
                   </Button>

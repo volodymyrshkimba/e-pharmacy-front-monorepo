@@ -88,7 +88,7 @@ const NearestStore = () => {
         </p>
         <ul className={css.list}>
           {data.map((card) => (
-            <StoreCard card={card} />
+            <StoreCard card={card} key={card.phone} />
           ))}
         </ul>
       </Container>
