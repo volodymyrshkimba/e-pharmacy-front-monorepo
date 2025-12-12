@@ -1,0 +1,114 @@
+.form {
+  padding: 20px 20px 40px 20px;
+
+  border-radius: 27px;
+
+  background-color: var(--light-secondary);
+}
+
+.formTitle {
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 16px;
+
+  margin-bottom: 12px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--medium-secondary);
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid rgba(var(--dark-primary-rgb), 0.1);
+}
+
+.paymentMethod {
+  padding-top: 38px;
+  padding-bottom: 40px;
+
+  border-bottom: 1px solid rgba(var(--dark-primary-rgb), 0.1);
+}
+
+.radioList {
+  padding-top: 20px;
+
+  font-size: 14px;
+  line-height: 1.29;
+  color: rgba(var(--dark-primary-rgb), 0.6);
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid rgba(var(--radio-rgb), 0.2);
+}
+
+.radio.active {
+  color: var(--dark-primary);
+}
+
+.active .circle {
+  border: 2px solid var(--accent-primary);
+}
+
+.active .circle::after {
+  content: "";
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 10px;
+
+  background-color: var(--accent-primary);
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.orderDetails {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.totalWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 8px;
+  background-color: var(--accent-quaternary);
+
+  margin-top: 20px;
+  padding: 14px 18px;
+
+  font-weight: 600;
+  line-height: 1.4;
+}

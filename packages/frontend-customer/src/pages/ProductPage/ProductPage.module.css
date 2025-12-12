@@ -10,12 +10,7 @@
   max-width: 335px;
   height: 337px;
 
-  margin-left: auto;
-  margin-right: auto;
-
   overflow: hidden;
-
-  margin-bottom: 8px;
 }
 
 .img {
@@ -39,7 +34,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 17px;
+  margin-bottom: 32px;
 
   font-weight: 600;
   line-height: 1.4;
@@ -52,15 +47,262 @@
   color: rgba(var(--dark-primary-rgb), 0.6);
 }
 
-.btnDetails {
+.btnAmount {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.details {
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(var(--dark-primary-rgb), 0.1);
+  border-radius: 60px;
+
+  width: 108px;
+  height: 44px;
+
+  line-height: 1.25;
+}
+
+.descReviewWrapper {
+  padding: 20px 20px 40px 20px;
+
+  border-radius: 27px;
+  background-color: var(--light-secondary);
+}
+
+.btnsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.tabBtn {
+  text-transform: capitalize;
+
+  padding: 8px 25px;
+  border-radius: 40px;
+
+  background-color: rgba(var(--accent-primary-rgb), 0.1);
+
+  height: 33px;
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+  color: var(--accent-primary);
+}
+
+.active {
+  background-color: var(--accent-primary);
+  color: var(--light-secondary);
+}
+
+.descItem {
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--medium-secondary);
+}
+
+.descItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.descText {
+  color: var(--dark-primary);
+}
+
+.revItem {
+  padding: 14px 28px;
+
+  border: 1px solid var(--light-quaternary);
+  border-radius: 20px;
+}
+
+.revItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.userRaringWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 14px;
+}
+
+.avatarNameWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.revThumb {
+  border-radius: 30px;
+
+  min-width: 44px;
+  height: 44px;
+
+  overflow: hidden;
+}
+
+.revImg {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.revTitle {
+  font-weight: 600;
+  line-height: 1.4;
+
+  margin-bottom: 4px;
+}
+
+.revDate {
   font-size: 12px;
   line-height: 1.5;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
+  color: rgba(var(--dark-primary-rgb), 0.6);
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.revText {
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--medium-secondary);
+}
+
+@media screen and (max-width: 767px) {
+  .item {
+    margin-bottom: 8px;
+  }
+
+  .thumb {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .item {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 134px;
+    padding-bottom: 120px;
+  }
+
+  .item {
+    display: flex;
+    gap: 16px;
+  }
+
+  .thumb {
+    min-width: 364px;
+    height: 284px;
+  }
+
+  .info {
+    padding: 32px;
+
+    flex-grow: 1;
+  }
+
+  .namePrice {
+    flex-direction: column;
+    gap: 32px;
+
+    margin-bottom: 66px;
+
+    font-size: 20px;
+  }
+
+  .productName {
+    margin-bottom: 4px;
+  }
+
+  .stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .descReviewWrapper {
+    padding: 32px 32px 70px 32px;
+  }
+
+  .btnsWrapper {
+    margin-bottom: 32px;
+  }
+
+  .descItem {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .revTitle {
+    font-size: 18px;
+  }
+
+  .revText {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-top: 172px;
+  }
+
+  .contentWrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .item {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .thumb {
+    height: 337px;
+  }
+
+  .info {
+    padding: 20px;
+
+    flex-grow: 0;
+  }
+
+  .namePrice {
+    flex-direction: row;
+
+    margin-bottom: 40px;
+  }
+
+  .descReviewWrapper {
+    padding: 40px 40px 80px 40px;
+  }
+
+  .btnsWrapper {
+    margin-bottom: 40px;
+  }
 }

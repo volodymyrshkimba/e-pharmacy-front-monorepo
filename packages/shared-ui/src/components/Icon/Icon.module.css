@@ -57,6 +57,11 @@
   height: 16px;
 }
 
+.star.starEmpty {
+  stroke: var(--light-quaternary);
+  fill: var(--light-quaternary);
+}
+
 .lightning {
   width: 20px;
   height: 20px;
@@ -98,6 +103,14 @@
 .pag-left.disable,
 .pag-right.disable {
   fill: rgba(var(--dark-primary-rgb), 0.5);
+}
+
+.minus,
+.plus {
+  width: 20px;
+  height: 20px;
+
+  stroke: var(--accent-primary);
 }
 
 @media screen and (min-width: 768px) {

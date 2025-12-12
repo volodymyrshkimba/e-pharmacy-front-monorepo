@@ -29,6 +29,7 @@
   --shadow-rgb: 71, 71, 71;
   --shadow-avatar: #101828;
   --shadow-avatar-rgb: 16, 24, 40;
+  --radio-rgb: 18, 20, 23;
 
   /* Images */
   --bg-pill-mob: url("../assets/images/pill-bg-mob.png");
