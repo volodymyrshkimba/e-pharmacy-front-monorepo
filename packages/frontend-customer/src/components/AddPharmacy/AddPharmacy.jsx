@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import { Button, Picture } from "shared-ui";
 
 import Container from "../Container/Container";
@@ -5,6 +7,7 @@ import Container from "../Container/Container";
 import css from "./AddPharmacy.module.css";
 
 const AddPharmacy = () => {
+  const navigate = useNavigate();
   return (
     <section className={css.section}>
       <Container>
@@ -16,7 +19,12 @@ const AddPharmacy = () => {
               home by connecting with your community pharmacy through our online
               platform.
             </p>
-            <Button stroke className={"addLight"} type={"button"}>
+            <Button
+              stroke
+              className={"addLight"}
+              type={"button"}
+              onClick={() => navigate("/medicine-store")}
+            >
               Buy medicine
             </Button>
           </div>

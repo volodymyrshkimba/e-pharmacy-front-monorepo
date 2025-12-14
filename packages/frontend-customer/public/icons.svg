@@ -92,5 +92,9 @@
     <path d="M10 4.16699V15.8337" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M4.16602 10H15.8327" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+  <symbol viewBox="0 0 20 20" id="x">
+    <path d="M15 5L5 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M5 5L15 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
 </defs>
 </svg>

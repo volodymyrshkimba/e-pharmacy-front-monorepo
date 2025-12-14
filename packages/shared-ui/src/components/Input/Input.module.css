@@ -40,4 +40,8 @@
   .wrapper.register {
     flex-grow: 1;
   }
+
+  .cart .input {
+    width: 260px;
+  }
 }

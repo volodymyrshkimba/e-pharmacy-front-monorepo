@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Container from "../Container/Container";
 
 import css from "./StatCards.module.css";
@@ -14,7 +16,9 @@ const StatCards = () => {
             </div>
             <div className={css.percenegeWrapper}>
               <p className={css.percentage}>70%</p>
-              <p className={css.btn}>Shop now</p>
+              <Link className={css.btn} to={"/medicine-store"}>
+                Shop now
+              </Link>
             </div>
           </li>
           <li className={css.item}>
@@ -24,7 +28,9 @@ const StatCards = () => {
             </div>
             <div className={css.percenegeWrapper}>
               <p className={css.percentage}>100%</p>
-              <p className={css.btn}>Read more</p>
+              <Link className={css.btn} to={"/medicine-store"}>
+                Read more
+              </Link>
             </div>
           </li>
           <li className={css.item}>
@@ -34,7 +40,9 @@ const StatCards = () => {
             </div>
             <div className={css.percenegeWrapper}>
               <p className={css.percentage}>35%</p>
-              <p className={css.btn}>Shop now</p>
+              <Link className={css.btn} to={"/medicine-store"}>
+                Shop now
+              </Link>
             </div>
           </li>
         </ul>

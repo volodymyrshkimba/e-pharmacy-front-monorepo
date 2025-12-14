@@ -9,6 +9,7 @@ import MedicineStorePage from "./pages/MedicineStorePage/MedicineStorePage";
 import MedicinePage from "./pages/MedicinePage/MedicinePage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import CartPage from "./pages/CartPage/CartPage";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="cart" element={<CartPage />} />
         </Route>
       </Routes>
+      <Modal />
     </>
   );
 }

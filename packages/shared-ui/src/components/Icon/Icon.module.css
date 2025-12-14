@@ -24,6 +24,13 @@
   height: 32px;
 }
 
+.x {
+  stroke: var(--dark-primary);
+
+  width: 20px;
+  height: 20px;
+}
+
 .facebook,
 .instagram,
 .youtube {
@@ -113,10 +120,27 @@
   stroke: var(--accent-primary);
 }
 
+.minus.cart,
+.plus.cart {
+  width: 18px;
+  height: 18px;
+}
+
 @media screen and (min-width: 768px) {
   .pag-left,
   .pag-right {
     width: 8px;
     height: 14px;
+  }
+
+  .minus.cart,
+  .plus.cart {
+    width: 20px;
+    height: 20px;
+  }
+
+  .x {
+    width: 24px;
+    height: 24px;
   }
 }

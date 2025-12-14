@@ -1,5 +1,6 @@
 import Container from "../../components/Container/Container";
 import CartForm from "../../components/CartForm/CartForm";
+import CartItem from "../../components/CartItem/CartItem";
 
 import css from "./CartPage.module.css";
 
@@ -29,31 +30,14 @@ const CartPage = () => {
     <main className={css.main}>
       <Container>
         <h1 className={css.title}>Cart</h1>
-        <CartForm />
-        <ul className={css.list}>
-          {data.map((item) => (
-            <li className={css.item} key={item.id}>
-              <div className={css.thumb}>
-                <img className={css.img} src={item.photo} alt={item.name} />
-              </div>
-              <div className={css.info}>
-                <div className={css.titlePrice}>
-                  <div className={css.nameDesc}>
-                    <p className={css.name}>{item.name}</p>
-                    <p className={css.desc}>{item.description}</p>
-                  </div>
-                  <p className={css.price}>$ {item.price}</p>
-                </div>
-                <div className={css.amountRemove}>
-                  <div>amount</div>
-                  <button className={css.removeBtn} type="button">
-                    remove
-                  </button>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <div className={css.pageContent}>
+          <CartForm />
+          <ul className={css.list}>
+            {data.map((item) => (
+              <CartItem key={item.id} item={item} />
+            ))}
+          </ul>
+        </div>
       </Container>
     </main>
   );

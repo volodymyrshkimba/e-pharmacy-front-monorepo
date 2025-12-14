@@ -1,0 +1,37 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(var(--dark-primary-rgb), 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  position: relative;
+  background-color: var(--light-secondary);
+  border-radius: 20px;
+  padding: 40px 32px;
+
+  width: 343px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 50px 70px;
+
+    width: 463px;
+  }
+
+  .closeBtn {
+    top: 20px;
+    right: 20px;
+  }
+}

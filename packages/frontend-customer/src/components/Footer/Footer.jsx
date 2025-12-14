@@ -35,17 +35,29 @@ const Footer = () => {
             </nav>
             <ul className={css.socialList}>
               <li className={css.socialListItem}>
-                <a className={css.link} href="#">
+                <a
+                  className={css.link}
+                  target="_blank"
+                  href="https://www.facebook.com/goITclub/"
+                >
                   <Icon name={"facebook"} />
                 </a>
               </li>
               <li className={css.socialListItem}>
-                <a className={css.link} href="#">
+                <a
+                  className={css.link}
+                  target="_blank"
+                  href="https://www.instagram.com/goitclub/"
+                >
                   <Icon name={"instagram"} />
                 </a>
               </li>
               <li className={css.socialListItem}>
-                <a className={css.link} href="#">
+                <a
+                  className={css.link}
+                  target="_blank"
+                  href="https://www.youtube.com/c/GoIT"
+                >
                   <Icon name={"youtube"} />
                 </a>
               </li>
